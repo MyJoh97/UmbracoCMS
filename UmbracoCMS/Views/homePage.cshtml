@@ -8,6 +8,20 @@
 	var signatureImage = Model?.Value<IPublishedContent>("aboutSignatureImage")?.Url() ?? "";
 }
 
+<section class="header">
+	<div class="container">
+		<div ="address-socialmedia">
+			<div class="address">
+				<p class="address-ingress">@Model?.Value("headerAddress")</p>
+			</div>
+			<div class="socialmedia">
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
 <section id="hero-slider" class="hero">
 	<!--<div class="background" style="background-image:url(@backgroundImage); background-size: cover; background-position: 60%"></div>-->
 	<img class="background" src="@backgroundImage" alt="@Model?.Value("heroBackgroundImage")" />
